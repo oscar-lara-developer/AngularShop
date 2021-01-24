@@ -1,0 +1,24 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: bilal;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.agregar{
+    padding: 100px;
+}
+
+
+@media (min-width: 576px){
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}

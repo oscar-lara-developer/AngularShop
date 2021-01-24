@@ -1,0 +1,4 @@
+<img [src]="product.image" alt="">
+<p> {{ product.title }} {{ product.description }}</p>
+<p style="color: red;">Desde: {{ product.price | currency:'EUR'}}</p>
+<button class="agregar" (click)="addCart()">Agregar a la cesta</button>
