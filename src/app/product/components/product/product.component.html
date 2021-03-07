@@ -1,5 +1,5 @@
 <img [src]="product.image" alt="">
 <p> {{ product.title }} {{ product.description }}</p>
 <p style="color: red;">Desde: {{ product.price | currency:'EUR'}}</p>
-<button class="agregar" (click)="addCart()">Agregar a la cesta</button>
-<a [routerLink]="['/products', product.id]">Ver detalle</a>
+<button mat-raised-button color="primary" class="agregar" (click)="addCart()">Agregar a la cesta</button>
+<a mat-raised-button color="primary" [routerLink]="['/products', product.id]">Ver detalle</a>
