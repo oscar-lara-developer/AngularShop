@@ -15,6 +15,13 @@ export class TableComponent implements AfterViewInit, OnInit {
   @ViewChild(MatTable, {static: false}) table: MatTable<TableItem>;
   dataSource: TableDataSource;
 
+  constructor() {
+    this.paginator = {} as MatPaginator;
+    this.sort = {} as MatSort;
+    this.table = {} as MatTable<TableItem>;
+    this.dataSource = {} as TableDataSource;
+  }
+
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
   displayedColumns = ['id', 'name'];
 

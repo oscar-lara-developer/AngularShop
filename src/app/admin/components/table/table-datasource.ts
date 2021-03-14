@@ -46,6 +46,8 @@ export class TableDataSource extends DataSource<TableItem> {
 
   constructor() {
     super();
+    this.paginator = {} as MatPaginator;
+    this.sort = {} as MatSort;
   }
 
   /**
