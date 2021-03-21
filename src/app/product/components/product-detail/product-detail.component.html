@@ -1,4 +1,4 @@
-<div> *ngIf="product">
+<div>
     <div>
         <img [src]="product.image" alt="">
     </div>
@@ -10,4 +10,6 @@
         <p>{{ product.description }}</p>
     </div>
     <button (click)="createProduct()">crear</button>
+    <button (click)="updateProduct()">modificar</button>
+    <button (click)="deleteProduct()">borrar</button>
 </div>

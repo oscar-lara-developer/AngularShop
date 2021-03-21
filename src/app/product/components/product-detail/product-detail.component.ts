@@ -37,13 +37,31 @@ export class ProductDetailComponent implements OnInit {
     const newProduct: Product = {
       id:'222',
       title: 'nuevo desde angular',
-      image: 'assets/images/camiseta.png',
+      image: 'assets/images/banner-1.jpg',
       price: 3000,
       description: 'nuevo producto'
     };
     this.ProductsService.createProduct(newProduct)
     .subscribe(product => {
       console.log(product);
+    });
+  }
+
+  updateProduct(){
+    const updateProduct: Partial<Product> = {
+      price: 55555,
+      description: 'edicion titulo'
+    };
+    this.ProductsService.updateProduct('2',updateProduct)
+    .subscribe(product => {
+      console.log(product);
+    });
+  }
+
+  deleteProduct(){
+    this.ProductsService.deleteProduct('19')
+    .subscribe(rta => {
+      console.log(rta);
     });
   }
 
