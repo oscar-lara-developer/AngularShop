@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angularshopplatzi": {
+      "hosting": {
+        "Angular": [
+          "angularshopplatzi"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angularshopplatzi"
+  }
+}
